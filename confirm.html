@@ -12,7 +12,7 @@
         <h1 class="text-success">Registrierung erfolgreich</h1>
         <p class="lead"> Vielen Dank für Ihre Textilspende</p>
         <hr>
-        <div id="ausgabe"> </div>
+        <div id="ausgabe"></div>
         <a href="index.html" class="btn btn-primary mt-3">Zur Startseite</a>
     </div>
 <script>
@@ -20,9 +20,10 @@
     const adresse = localStorage.getItem("adresse");
     const kleidung = localStorage.getItem("kleidung");
     const krise = localStorage.getItem("krise");
-    let kriseText = krise.charAt(0).toUpperCase() + krise.slice(1);
     const datum = localStorage.getItem("datum");
-
+    if (krise) {
+        kriseText = krise.charAt(0).toUpperCase() + krise.slice(1);
+    }
     let ortText = "";
 
     if (art === "geschaeftsstelle") {
@@ -36,7 +37,7 @@
          <p><strong>Ort:</strong> ${ortText}</p> 
          <p><strong>Art der Textilien/Kleidung:</strong> ${kleidung}</p>
          <p><strong>Kriesengebiet:</strong> ${kriseText}</p>
-         <p><strong>Datum / Uhrzeit:</strong> ${datum}</p>;
+         <p><strong>Datum / Uhrzeit:</strong> ${datum}</p>`;
 </script>
 
 </body>
