@@ -15,30 +15,33 @@
         <div id="ausgabe"></div>
         <a href="index.html" class="btn btn-primary mt-3">Zur Startseite</a>
     </div>
-<script>
-    const art = localStorage.getItem("art");
-    const adresse = localStorage.getItem("adresse");
-    const kleidung = localStorage.getItem("kleidung");
-    const krise = localStorage.getItem("krise");
-    const datum = localStorage.getItem("datum");
-    if (krise) {
-        kriseText = krise.charAt(0).toUpperCase() + krise.slice(1);
-    }
-    let ortText = "";
+    <script>
+        const art = localStorage.getItem("art");
+        const adresse = localStorage.getItem("adresse");
+        const kleidung = localStorage.getItem("kleidung");
+        const krise = localStorage.getItem("krise");
+        const datum = localStorage.getItem("datum");
+        if (krise) {
+            kriseText = krise.charAt(0).toUpperCase() + krise.slice(1);
+        }
+        let ortText = "";
 
-    if (art === "geschaeftsstelle") {
-        ortText = "Übergabe an der Geschäftsstelle";
-    } else {
+        if (art === "geschaeftsstelle") {
+            ortText = "Übergabe an der Geschäftsstelle";
+        } else {
 
-        ortText = adresse; 
-    }
-    document.getElementById("ausgabe").innerHTML =
-        `<p><strong>Art der Übergabe:</strong> ${art}</p>
-         <p><strong>Ort:</strong> ${ortText}</p> 
-         <p><strong>Art der Textilien/Kleidung:</strong> ${kleidung}</p>
-         <p><strong>Kriesengebiet:</strong> ${kriseText}</p>
-         <p><strong>Datum / Uhrzeit:</strong> ${datum}</p>`;
-</script>
-
+            ortText = adresse;
+        }
+        document.getElementById("ausgabe").innerHTML =
+            `<p><strong>Art der Übergabe:</strong> ${art}</p>
+             <p><strong>Ort:</strong> ${ortText}</p>
+             <p><strong>Art der Textilien/Kleidung:</strong> ${kleidung}</p>
+             <p><strong>Kriesengebiet:</strong> ${kriseText}</p>
+             <p><strong>Datum / Uhrzeit:</strong> ${datum}</p>`;
+    </script>
+    <footer class="bg-light text-center p-2">
+        <p>&copy; 2026 PG26Kleiderspende Verein</p>
+        <p> Impressum | Datenschutz</p>
+    </footer>
 </body>
 </html>
