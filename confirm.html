@@ -20,6 +20,7 @@
     const adresse = localStorage.getItem("adresse");
     const kleidung = localStorage.getItem("kleidung");
     const krise = localStorage.getItem("krise");
+    let kriseText = krise.charAt(0).toUpperCase() + krise.slice(1);
     const datum = localStorage.getItem("datum");
 
     let ortText = "";
@@ -32,10 +33,10 @@
     }
     document.getElementById("ausgabe").innerHTML =
         `<p><strong>Art der Übergabe:</strong> ${art}</p>
-         <p><strong>Ort:</strong> ${ortText}</p>
+         <p><strong>Ort:</strong> ${ortText}</p> 
          <p><strong>Art der Textilien/Kleidung:</strong> ${kleidung}</p>
-         <p><strong>Kriesengebiet:</strong> ${krise}</p>
-         <p><strong>Datum / Uhrzeit:</strong> ${datum}</p>`;
+         <p><strong>Kriesengebiet:</strong> ${kriseText}</p>
+         <p><strong>Datum / Uhrzeit:</strong> ${datum}</p>;
 </script>
 
 </body>
