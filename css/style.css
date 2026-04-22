@@ -47,3 +47,42 @@ footer {
     }
     main {padding: 20px}
 }
+header img {
+    border-radius: 12px;
+    background: white;
+    padding: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+header small {
+    color: rgba(255,255,255,0.85);
+    font-size: 0.95rem;
+}
+h1, h2 {
+    font-weight: bold;
+}
+form {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+input,
+select {
+    padding: 10px;
+    border-radius: 10px !important;
+}
+.btn-primary {
+    background: #0d6efd;
+    border: none;
+    padding: 12px 24px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+    .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 14px rgba(0,0,0,0.12);
+    }
+.card {
+    border: none;
+    border-radius: 16px;
+}
