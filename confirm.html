@@ -18,6 +18,7 @@
     <script>
         const art = localStorage.getItem("art");
         const adresse = localStorage.getItem("adresse");
+        const kontakt = localStorage.getItem("kontakt");
         const kleidung = localStorage.getItem("kleidung");
         const krise = localStorage.getItem("krise");
         const datum = localStorage.getItem("datum");
@@ -35,6 +36,7 @@
         document.getElementById("ausgabe").innerHTML =
             `<p><strong>Art der Übergabe:</strong> ${art}</p>
              <p><strong>Ort:</strong> ${ortText}</p>
+             <p><strong>Kontakt:</strong> ${kontakt}</p>
              <p><strong>Art der Textilien/Kleidung:</strong> ${kleidung}</p>
              <p><strong>Kriesengebiet:</strong> ${kriseText}</p>
              <p><strong>Datum / Uhrzeit:</strong> ${datum}</p>`;
