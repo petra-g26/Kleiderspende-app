@@ -3,7 +3,8 @@ body {
     font-family: Arial, Helevetica, sans-serif;
     color: #222;
 }
-header {
+header,
+header.mb-4 {
     background: linear-gradient(90deg, #b7f7c4, #1f7a3d);
     color: white; 
     padding: 20px;
